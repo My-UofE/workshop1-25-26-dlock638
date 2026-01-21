@@ -1,8 +1,10 @@
 import random
+import math
 
 # function to be used by game_1: Guess the Number
 def pick_value(poss_values):
-    x = random.choice(poss_values)   
+    print(poss_values)
+    x = math.ceil((max(poss_values) + min(poss_values)) / 2)
     return x
 
 # function to be used in game_2: Higher or Lower
